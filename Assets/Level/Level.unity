@@ -823,7 +823,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5388016239686147809, guid: fbaf969db66307146a6caa459f4c64f8, type: 3}
       propertyPath: m_Name
-      value: Drone (2)
+      value: Drone 03
       objectReference: {fileID: 0}
     - target: {fileID: 5388016239686147814, guid: fbaf969db66307146a6caa459f4c64f8, type: 3}
       propertyPath: m_RootOrder
@@ -3116,7 +3116,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6952450682287683402, guid: 2d119eb21b951b74fa20c10a1476d094, type: 3}
       propertyPath: m_Name
-      value: Basic Enemy (3)
+      value: Mechanoid 04
       objectReference: {fileID: 0}
     - target: {fileID: 7596500761793610695, guid: 2d119eb21b951b74fa20c10a1476d094, type: 3}
       propertyPath: m_FlipX
@@ -5212,7 +5212,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6952450682287683402, guid: 2d119eb21b951b74fa20c10a1476d094, type: 3}
       propertyPath: m_Name
-      value: Basic Enemy (2)
+      value: Mechanoid 05
       objectReference: {fileID: 0}
     - target: {fileID: 7596500761793610695, guid: 2d119eb21b951b74fa20c10a1476d094, type: 3}
       propertyPath: m_FlipX
@@ -5278,7 +5278,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6952450682287683402, guid: 2d119eb21b951b74fa20c10a1476d094, type: 3}
       propertyPath: m_Name
-      value: Basic Enemy (5)
+      value: Mechanoid 02
       objectReference: {fileID: 0}
     - target: {fileID: 7596500761793610695, guid: 2d119eb21b951b74fa20c10a1476d094, type: 3}
       propertyPath: m_FlipX
@@ -5381,7 +5381,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6952450682287683402, guid: 2d119eb21b951b74fa20c10a1476d094, type: 3}
       propertyPath: m_Name
-      value: Basic Enemy (1)
+      value: Mechanoid 07
       objectReference: {fileID: 0}
     - target: {fileID: 7596500761793610695, guid: 2d119eb21b951b74fa20c10a1476d094, type: 3}
       propertyPath: m_FlipX
@@ -5921,7 +5921,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6952450682287683402, guid: 2d119eb21b951b74fa20c10a1476d094, type: 3}
       propertyPath: m_Name
-      value: Basic Enemy (6)
+      value: Mechanoid 06
       objectReference: {fileID: 0}
     - target: {fileID: 7596500761793610695, guid: 2d119eb21b951b74fa20c10a1476d094, type: 3}
       propertyPath: m_FlipX
@@ -6297,7 +6297,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5388016239686147809, guid: fbaf969db66307146a6caa459f4c64f8, type: 3}
       propertyPath: m_Name
-      value: Drone (1)
+      value: Drone 02
       objectReference: {fileID: 0}
     - target: {fileID: 5388016239686147814, guid: fbaf969db66307146a6caa459f4c64f8, type: 3}
       propertyPath: m_RootOrder
@@ -6606,7 +6606,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6952450682287683402, guid: 2d119eb21b951b74fa20c10a1476d094, type: 3}
       propertyPath: m_Name
-      value: Basic Enemy (4)
+      value: Mechanoid 03
       objectReference: {fileID: 0}
     - target: {fileID: 7596500761793610695, guid: 2d119eb21b951b74fa20c10a1476d094, type: 3}
       propertyPath: m_FlipX
@@ -8595,7 +8595,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6952450682287683402, guid: 2d119eb21b951b74fa20c10a1476d094, type: 3}
       propertyPath: m_Name
-      value: Basic Enemy
+      value: Mechanoid 01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7596500761793610695, guid: 2d119eb21b951b74fa20c10a1476d094, type: 3}
+      propertyPath: m_FlipX
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d119eb21b951b74fa20c10a1476d094, type: 3}
@@ -8758,7 +8762,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5388016239686147809, guid: fbaf969db66307146a6caa459f4c64f8, type: 3}
       propertyPath: m_Name
-      value: Drone
+      value: Drone 01
       objectReference: {fileID: 0}
     - target: {fileID: 5388016239686147814, guid: fbaf969db66307146a6caa459f4c64f8, type: 3}
       propertyPath: m_RootOrder

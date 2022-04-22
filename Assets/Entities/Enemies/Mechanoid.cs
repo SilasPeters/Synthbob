@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BasicEnemy : Enemy
+public class Mechanoid : Enemy
 {
 	public override void Update() {
 		base.Update();
