@@ -30,7 +30,7 @@ public class Player : LivingEntity
 	}
 
 	public override void Kill() {
-		UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+		UnityEngine.SceneManagement.SceneManager.LoadScene(2);
 	}
 
 	public override void Damage(int amount) {
