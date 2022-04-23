@@ -11,7 +11,7 @@ public class Mechanoid : Enemy
 
 	/// <summary>Verplaatst de vijand met een vaste hoeveelheid lineair naar de speler</summary>
 	private void MoveTowardsPlayer() {
-		Vector2 distanceVector = Common.Player.transform.position - transform.position;
-		Common.Move2D(transform, distanceVector.normalized * BaseMovementSpeed);
+		Vector2 distanceVector = LevelCommons.Player.transform.position - transform.position;
+		LevelCommons.Move2D(transform, distanceVector.normalized * BaseMovementSpeed);
 	}
 }

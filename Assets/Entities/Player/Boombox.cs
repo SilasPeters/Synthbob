@@ -38,7 +38,7 @@ public class Boombox : MonoBehaviour
 
 	private void Shoot()  {
 		//Aestethics
-		StartCoroutine(Common.CamExtention.ScreenShake(recoilIntensity, recoilDuration)); //todo: je kunt parameters meegeven wow
+		StartCoroutine(LevelCommons.CamExtention.ScreenShake(recoilIntensity, recoilDuration)); //todo: je kunt parameters meegeven wow
 		soundShoot.Play();
 
 		//Shooting

@@ -42,6 +42,6 @@ public class LevelDeepness : MonoBehaviour
 	void ApplyDeepness(Transform t) {
 		float diepteFactor = (int)(t.position.z / 10); //magic
 		float movementFactor = diepteFactor / 10 * CameraExtention.CurrentMovementSpeed;
-		Common.Move2D(t, new Vector2(movementFactor * Amplifier, 0));
+		LevelCommons.Move2D(t, new Vector2(movementFactor * Amplifier, 0));
 	}
 }

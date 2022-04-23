@@ -6,7 +6,7 @@ public class MenuCustomization
 {
 	[MenuItem("Custom/Fix compile errors!")]
 	static void VerwijderBeeFolder() {
-		string folder = Directory.GetCurrentDirectory().Replace("\\", "/") + @"/Library/Bee";
+		string folder = LevelCommons.ProjectFolder + @"/Library/Bee";
 		if (FileUtil.DeleteFileOrDirectory(folder))
 		{
 			Debug.Log("Het zou nu opgelost moeten zijn. Wacht eventjes totdat Unity alles opnieuw heeft gecompiled.");

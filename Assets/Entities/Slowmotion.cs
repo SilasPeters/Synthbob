@@ -43,7 +43,7 @@ public class Slowmotion : MonoBehaviour
 
 	/// <summary>Decreases game speed following an exponential curve. Has no effect when slowmotion is applied to its fullest already</summary>
 	private IEnumerator SlowTime() {
-		float maxDuration = Mathf.Lerp(NormalDuration, MostDifficultDuration, Common.LevelProgression.GetFresh());
+		float maxDuration = Mathf.Lerp(NormalDuration, MostDifficultDuration, LevelCommons.LevelProgression.GetFresh());
 		float x = 0;
 		while ((x += Time.unscaledDeltaTime) < maxDuration) { // gaat door tot maximale duratie (en slowmotion) is bereikt
 			Time.timeScale = 1 - Intensity * Mathf.Pow(x / maxDuration, SlowingExponent);

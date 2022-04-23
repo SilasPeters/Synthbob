@@ -24,7 +24,7 @@ public class Player : LivingEntity
 
 	public override void Update() {
 		base.Update();
-		CurrentMovementSpeed = Mathf.Lerp(BaseMovementSpeed, MaxMovementSpeed, Common.LevelProgression.GetFresh());
+		CurrentMovementSpeed = Mathf.Lerp(BaseMovementSpeed, MaxMovementSpeed, LevelCommons.LevelProgression.GetFresh());
 		ProcessUserInput();
 		HandleOutOfBounds();
 	}
@@ -53,7 +53,7 @@ public class Player : LivingEntity
 		Vector2 sidewaysMovement = Vector2.zero;
 		if (Input.GetKey(KeyCode.A)) sidewaysMovement += new Vector2(-1, 0);
 		if (Input.GetKey(KeyCode.D)) sidewaysMovement += new Vector2( 1, 0);
-		Common.Move2D(transform, CurrentMovementSpeed * sidewaysMovement);
+		LevelCommons.Move2D(transform, CurrentMovementSpeed * sidewaysMovement);
 		SpriteRenderer.flipX = sidewaysMovement.x < 0;
 
 		// Springen

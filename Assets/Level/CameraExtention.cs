@@ -39,7 +39,7 @@ public class CameraExtention : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.Z))
 			movementLock = !movementLock;
 		if (!movementLock)
-			Common.Move2D(transform.parent, CurrentMovementSpeed, 0);
+			LevelCommons.Move2D(transform.parent, CurrentMovementSpeed, 0);
 		//TODO: hierboven staat .parent. Hmhm. MIsschien moet dit script verplaatst worden naar screen, met alle gevolgen
 	}
 
@@ -55,14 +55,14 @@ public class CameraExtention : MonoBehaviour
 	}
 	private IEnumerator VersnelScrollSnelheid() {
 		while (true) { //Gedurende het hele level
-			CurrentMovementSpeed = Mathf.Lerp(baseMovementSpeed, maximumMovementSpeed, Common.LevelProgression.GetFresh());
+			CurrentMovementSpeed = Mathf.Lerp(baseMovementSpeed, maximumMovementSpeed, LevelCommons.LevelProgression.GetFresh());
 			yield return null;
 		}
 	}
 
 	private void UpdateOOBIndicator() {
 		OOBIndicatorImage.color = new Color(255, 255, 255, Mathf.Lerp(0, 1,
-														   Mathf.InverseLerp(CamBounds.xMin + _OOBIndicatorRange, CamBounds.xMin, Common.Player.transform.position.x))
+														   Mathf.InverseLerp(CamBounds.xMin + _OOBIndicatorRange, CamBounds.xMin, LevelCommons.Player.transform.position.x))
 										   );
 	}
 

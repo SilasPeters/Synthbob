@@ -17,7 +17,7 @@ public class Projectile : MonoBehaviour
 		Debug.Assert(SpriteRenderer != null, $"{name} bevat geen Spriterenderer");
 
 		if ((TimeToLive -= Time.deltaTime) < 0) Destroy(gameObject);
-		Common.Move2D(transform, transform.right * Speed); //move towards red axis
+		LevelCommons.Move2D(transform, transform.right * Speed); //move towards red axis
 	}
 
 	public virtual void OnTriggerEnter2D(Collider2D other) {

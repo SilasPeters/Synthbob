@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public static class Common
+public static class LevelCommons
 {
-	public static Fresh<float> LevelProgression					= new(GetCalculatedLevelProgression);
-	public static Player Player									= GameObject.Find("Player").GetComponent<Player>();
-	public static CameraExtention CamExtention					= Camera.main.GetComponent<CameraExtention>();
+	public static readonly Fresh<float> LevelProgression		= new(GetCalculatedLevelProgression);
+	public static readonly Player Player						= GameObject.Find("Player").GetComponent<Player>();
+	public static readonly CameraExtention CamExtention			= Camera.main.GetComponent<CameraExtention>();
+	public static readonly string AssetsFolder					= Application.dataPath;
+	public static readonly string ProjectFolder					= AssetsFolder[..8]; //todo check
 
 	public static void Move2D(Transform obj, Vector2 delta)		=> obj.transform.localPosition += Time.deltaTime * new Vector3(delta.x, delta.y, 0);
 	public static void Move2D(Transform obj, float x, float y)  => Move2D(obj, new Vector2(x, y));
