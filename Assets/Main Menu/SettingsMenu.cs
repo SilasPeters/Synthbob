@@ -1,20 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SettingsMenu : MenuBehaviour
 {
+	[SerializeField] Dropdown difficultyDropdown;
+
 	void Start()
 	{
-		gameobject.SetActive(false);
+		gameObject.SetActive(false);
+		
 	}
-	private void OnEnable()
+	void OnEnable()
 	{
-		//load settings
+		LoadCurrentSettings();
 	}
 
-	public void Save()
+	private void LoadCurrentSettings()
 	{
-		print("Saved!");
+		
+	}
+
+	private void Save()
+	{
+		
 	}
 }
