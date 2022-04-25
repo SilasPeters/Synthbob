@@ -16,8 +16,8 @@ public class SettingsMenu : MenuBehaviour
 
 	public void Show()
 	{
-		LoadCurrentSettings();
 		gameObject.SetActive(true);
+		LoadCurrentSettings();
 	}
 
 	private void LoadCurrentSettings()
@@ -27,7 +27,7 @@ public class SettingsMenu : MenuBehaviour
 		enableItalian.isOn = Settings.EnableItalian;
 	}
 
-	private void Save()
+	public void Save()
 	{
 		bool succes = Settings.Save(difficultyDropdown.value, cheatsToggle.isOn, enableItalian.isOn);
 		if (!succes) Debug.LogError("Saving failed"); //todo doe aan user feedback
